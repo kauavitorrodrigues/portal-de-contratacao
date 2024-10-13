@@ -1,18 +1,28 @@
 import { Button } from "@/components/ui/button";
+import { Separator } from "@/components/ui/separator";
 import Link from "next/link";
 
-export const AuthButtons = () => {
+type Props = {
+    orientation: "horizontal" | "vertical";
+}
+
+export const AuthButtons = ({ orientation } : Props ) => {
     return (
 
-        <div className="flex gap-3">
+        <div className={`gap-3 items-center justify-center ${orientation === "horizontal" ? "flex-col flex" : "hidden md:flex"}`}>
 
-            <Link href="/signin">
-                <Button>Entrar</Button>
-            </Link>
+            <Button className={`${orientation === "horizontal" && "w-full max-w-72"}`}>
+                <Link href="/signin">Entrar</Link>
+            </Button>
 
-            <Link href="/signup">
-                <Button variant={"outline"}>Criar Conta</Button>
-            </Link>
+            <Separator 
+                orientation={orientation} 
+                className={`h-8 ${orientation === "horizontal" && "h-[1px] max-w-72"}`}
+            />
+            
+            <Button variant={"outline"} className={`${orientation === "horizontal" && "w-full max-w-72"}`}>
+                <Link href="/signin">Criar Conta</Link>
+            </Button>
 
         </div>
 
