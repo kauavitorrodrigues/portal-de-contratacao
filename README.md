@@ -1,36 +1,101 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+Claro! Aqui está uma versão aprimorada e formatada do seu README:
 
-## Getting Started
+---
 
-First, run the development server:
+# Portal de Contratação
+
+Este é um projeto desenvolvido com [Next.js](https://nextjs.org), inicializado com [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+
+## Sumário
+
+- [Introdução](#introdução)
+- [Instalação](#instalação)
+- [Uso](#uso)
+- [Estrutura do Projeto](#estrutura-do-projeto)
+- [Tecnologias Utilizadas](#tecnologias-utilizadas)
+- [Contribuição](#contribuição)
+- [Licença](#licença)
+
+## Introdução
+
+O Portal de Contratação é uma plataforma que conecta candidatos a vagas de emprego com empresas que buscam novos talentos. A plataforma oferece uma interface amigável e recursos avançados para facilitar a busca e a aplicação para vagas.
+
+## Instalação
+
+Para começar, clone o repositório:
+
+```bash
+git clone https://github.com/seu-usuario/portal-de-contratacao.git
+cd portal-de-contratacao
+```
+
+Em seguida, instale as dependências:
+
+```bash
+npm install
+# ou
+yarn install
+# ou
+pnpm install
+```
+
+## Uso
+
+Para iniciar o servidor de desenvolvimento, execute:
 
 ```bash
 npm run dev
-# or
+# ou
 yarn dev
-# or
+# ou
 pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Agora, abra [http://localhost:3000](http://localhost:3000) no seu navegador para ver o resultado.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+Você pode começar a editar a página modificando `src/app/page.tsx`. A página será atualizada automaticamente conforme você edita o arquivo.
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## Estrutura do Projeto
 
-## Learn More
+```bash
+├── .gitignore
+├── .next/
+├── package.json
+├── public/
+│   ├── branding/
+│   └── logos/
+├── README.md
+├── src/
+│   ├── api/
+│   ├── app/
+│   ├── components/
+│   ├── contexts/
+│   ├── data/
+│   ├── hooks/
+│   ├── lib/
+│   ├── reducers/
+│   ├── types/
+│   └── utils/
+├── tailwind.config.ts
+├── tsconfig.json
+└── next.config.mjs
+```
 
-To learn more about Next.js, take a look at the following resources:
+## Tecnologias Utilizadas
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+- **Next.js**
+- **React**
+- **Tailwind CSS**
+- **Radix UI**
+- **Axios**
+- **React Hook Form**
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+## Contribuição
 
-## Deploy on Vercel
+Contribuições são bem-vindas! Sinta-se à vontade para abrir uma issue ou enviar um pull request.
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## Licença
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+Este projeto está licenciado sob a Licença MIT.
+
+---
