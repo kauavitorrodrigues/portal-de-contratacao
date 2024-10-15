@@ -41,7 +41,7 @@ export const Slider = () => {
 
     return (
 
-        <div className='hidden lg:flex w-full justify-center bg-neutral-900 p-6'>
+        <div className='hidden lg:flex w-full justify-center dark:bg-neutral-900 p-6'>
 
             <div className="max-w-5xl flex flex-col gap-6">
 
@@ -63,7 +63,7 @@ export const Slider = () => {
 
                                     { group.map((item) => (
 
-                                        <div className="flex gap-4 items-center bg-neutral-900 w-full">
+                                        <div className="flex gap-4 items-center bg-white dark:bg-neutral-900 w-full">
                                             <img
                                                 key={item.id}
                                                 src={item.image}

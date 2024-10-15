@@ -6,6 +6,7 @@ import { cn } from "@/lib/utils"
 import { ThemeProvider } from "@/components/site/ThemeProvider";
 import { Toaster } from "@/components/ui/toaster";
 import { Header } from "@/components/site/layout/Header";
+import Head from "next/head";
 
 const fontSans = FontSans({
 subsets: ["latin"],

@@ -4,6 +4,7 @@ import Image from "next/image";
 import { Separator } from "@/components/ui/separator";
 import { Logo } from "./Logo";
 import { MobileSideMenu } from "./MobileSideMenu";
+import { ToggleTheme } from "../ToggleTheme";
 
 export const Header = () => {
 
@@ -24,6 +25,8 @@ export const Header = () => {
                         Buscar Empresas
                     </Link>
                 </div>
+
+                <div className="hidden md:flex"><ToggleTheme/></div>
 
             </div>
 

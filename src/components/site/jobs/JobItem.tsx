@@ -1,7 +1,7 @@
 "use client"
 
 import { Job } from "@/types/Job";
-import { Card, CardHeader, CardTitle, CardContent, CardFooter, CardDescription } from "@/components/ui/card";
+import { Card, CardHeader, CardTitle, CardContent, CardDescription } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import Link from "next/link";
 import { Dot } from "lucide-react";
@@ -17,7 +17,7 @@ export const JobItem = ({ job, handleJobClick }: Props) => {
     return (
 
         <Card 
-            className={`job-item w-full max-w-3xl ${ handleJobClick && "cursor-pointer"}`}
+            className={`job-item w-full max-w-3xl ${ handleJobClick && "cursor-pointer"} dark:hover:bg-zinc-900 dark:hover:border-zinc-900 duration-300 hover:bg-zinc-100 hover:border-zinc-100`}
             onClick={() => handleJobClick && handleJobClick(job)}
         >
 
@@ -25,7 +25,7 @@ export const JobItem = ({ job, handleJobClick }: Props) => {
 
                 <div className="flex justify-between">
                     <Link href={`/company/${job.company.id}`}>
-                        <img src={job.company.photo} alt={job.company.name} className="h-10 w-10 rounded-full"/>
+                        <img src={job.company.photo} alt={job.company.name} className="h-10 w-10 rounded-full border-2 border-white bg-white"/>
                     </Link>
                     { 
                         (new Date().getTime() - new Date(job.creationDate).getTime()) < 2 * 24 * 60 * 60 * 1000 && 

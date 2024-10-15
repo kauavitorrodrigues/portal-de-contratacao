@@ -12,7 +12,7 @@ export type Job = {
     qualifications: string;
     additionalInformation: string;
     salary: number;
-    status: "Active" | "Inactive";
+    status: "active" | "inactive";
     benefits: string;
     position: string;
     id: string;
