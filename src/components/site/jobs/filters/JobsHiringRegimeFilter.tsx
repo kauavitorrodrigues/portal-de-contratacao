@@ -6,7 +6,7 @@ export const JobsHiringRegimeFilter = () => {
 
     const { filterByHiringRegime } = useFilter()
 
-    const handleSelectChange = (status: string) => {
+    const handleSelectChange = (status: "All" | "PF" | "PJ") => {
         filterByHiringRegime(status)
     }
 
